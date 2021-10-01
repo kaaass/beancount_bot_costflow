@@ -1,6 +1,6 @@
 # beancount_bot_costflow
 
-beancount_bot 的 Costflow 语法插件
+[beancount_bot](https://github.com/kaaass/beancount_bot) 的 Costflow 语法插件
 
 ![GitHub](https://img.shields.io/github/license/kaaass/beancount_bot_costflow)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/kaaass/beancount_bot_costflow?color=green&label=version)
