@@ -12,6 +12,7 @@ setup(
     name='beancount_bot_costflow',
     version=__VERSION__,
     packages=['beancount_bot_costflow'],
+    package_data={'': ['costflow-parser.js']},
     url='https://github.com/kaaass/beancount_bot_costflow',
     install_requires=install_requires,
     license='GPLv3',

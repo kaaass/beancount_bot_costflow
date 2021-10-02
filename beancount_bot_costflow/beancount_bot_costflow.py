@@ -48,7 +48,7 @@ class CostflowDispatcher(Dispatcher):
                 ['node', _SCRIPT_PATH,
                  '--config', self.config,
                  '--json',
-                 input_str], stderr=subprocess.STDOUT, shell=True, timeout=3,
+                 input_str], stderr=subprocess.STDOUT, timeout=3,
                 universal_newlines=True)
         except subprocess.CalledProcessError as e:
             logger.error(f'Costflow 解析错误：{e.output}', e)
