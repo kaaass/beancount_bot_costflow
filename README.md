@@ -8,7 +8,7 @@
 
 ## 使用
 
-使用本插件之前，需要保证安装 Node.js 并且安装路径位于 PATH 中。
+使用本插件之前，需要保证安装 Node.js（Node 版本需 >= 14） 并且安装路径位于 PATH 中。
 
 1. 安装：`pip install beancount_bot_costflow`
 2. 在 beancount_bot 配置文件的 `transaction.message_dispatcher` 增加如下配置：
