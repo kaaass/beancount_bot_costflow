@@ -31,6 +31,11 @@ class TestCostflow(unittest.TestCase):
              f'{today} * "KFC" "" #costflow\n'
              '  Liabilities:CreditCard:CMB  -36.00 USD\n'
              '  Expenses:Food                36.00 USD\n'),
+            ('@A B 10 bofa > 2 rx + ry',
+             f'{today} * "A" "B" #costflow\n'
+             '  Assets:US:BofA:Checking  -10.00 USD\n'
+             '  Assets:Receivables:X       2.00 USD\n'
+             '  Assets:Receivables:Y       8.00 USD\n'),
         ]
 
         for cmd, expected in cases:
