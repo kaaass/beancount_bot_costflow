@@ -53,7 +53,7 @@ class CostflowDispatcher(Dispatcher):
                  input_str], stderr=subprocess.STDOUT, timeout=3,
                 universal_newlines=True)
         except subprocess.CalledProcessError as e:
-            logger.error(f'Costflow 解析错误：%s。%s', e.output, e)
+            logger.error(f'Costflow 解析错误：%s。', e.output, exc_info=e)
             raise ValueError('Costflow 解析错误，请检查相关配置！')
         logger.debug("调用 Costflow CLI 返回：%s", output)
         data = json.loads(output)
@@ -75,5 +75,5 @@ class CostflowDispatcher(Dispatcher):
                 logger.error(f'Node 版本过低，最低版本需要 {_NODE_MIN_MAJOR}，当前版本 {output}')
                 raise EnvironmentError(f'Node 版本过低，最低版本需要 {_NODE_MIN_MAJOR}，当前版本 {output}')
         except FileNotFoundError as e:
-            logger.error('Node 调用错误，请检查是否安装 Node >= %s！%s', _NODE_MIN_MAJOR, e)
+            logger.error('Node 调用错误，请检查是否安装 Node >= %s！', _NODE_MIN_MAJOR, exc_info=e)
             raise EnvironmentError(f'Node 调用错误，请检查是否安装 Node >= {_NODE_MIN_MAJOR}！')
