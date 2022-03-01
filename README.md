@@ -5,6 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/kaaass/beancount_bot_costflow)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/kaaass/beancount_bot_costflow?color=green&label=version)
 ![PyPI](https://img.shields.io/pypi/v/beancount_bot_costflow)
+[![Test and Lint](https://github.com/kaaass/beancount_bot_costflow/actions/workflows/test-with-lint.yml/badge.svg?branch=master)](https://github.com/kaaass/beancount_bot_costflow/actions/workflows/test-with-lint.yml)
 
 ## 使用
 
