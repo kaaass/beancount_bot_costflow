@@ -1,7 +1,6 @@
 {
   "mode": "beancount",
   "currency": "USD",
-  "timezone": "Asia/Shanghai",
   "tag": "#costflow",
   "account": {
     "eob": "Equity:Opening-Balances",
