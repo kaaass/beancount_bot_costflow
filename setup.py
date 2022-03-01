@@ -1,12 +1,11 @@
+from pathlib import Path
+
 from setuptools import setup
 
-from beancount_bot_costflow import __VERSION__
+__VERSION__ = "1.1.0"
 
-with open("requirements.txt", "r") as f:
-    install_requires = f.read().splitlines()
-
-with open("README.md", "r", encoding='utf-8') as f:
-    long_description = f.read()
+root = Path(__file__).parent
+long_description = (root / "README.md").read_text()
 
 setup(
     name='beancount_bot_costflow',
@@ -14,7 +13,9 @@ setup(
     packages=['beancount_bot_costflow'],
     package_data={'': ['costflow-parser.js']},
     url='https://github.com/kaaass/beancount_bot_costflow',
-    install_requires=install_requires,
+    install_requires=[
+        'beancount_bot>=1.0.1',
+    ],
     license='GPLv3',
     author='KAAAsS',
     author_email='admin@kaaass.net',
