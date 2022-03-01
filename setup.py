@@ -7,6 +7,10 @@ __VERSION__ = "1.1.0"
 root = Path(__file__).parent
 long_description = (root / "README.md").read_text()
 
+# 写版本号
+with open("beancount_bot_costflow/__version__.py", "w") as f:
+    f.write(f"__VERSION__ = '{__VERSION__}'")
+
 setup(
     name='beancount_bot_costflow',
     version=__VERSION__,
